@@ -12,15 +12,15 @@ const Carousel = () => {
       <h1>Bookshelf</h1>
       <div
         id="bookshelf-carousel"
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#bookshelf-carousel"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
           ></button>
           <button
             type="button"
@@ -54,9 +54,9 @@ const Carousel = () => {
           ></button>
         </div>
 
-        <div class="carousel-inner">
+        <div className="carousel-inner">
           {/* A Study In Scarlet */}
-          <div class="carousel-item active">
+          <div className="carousel-item active">
             <a
               href="https://manybooks.net/book/123113/read#epubcfi(/6/2[titlepage]!/4/1:0)"
               target="_blank"
@@ -66,7 +66,7 @@ const Carousel = () => {
             </a>
           </div>
           {/* The Sign of the Four */}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/123109/read#epubcfi(/6/2[item4]!/4/2/1:0)"
               target="_blank"
@@ -76,7 +76,7 @@ const Carousel = () => {
             </a>
           </div>
           {/*The Adventures of Sherlock Holmes*/}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/123108/read#epubcfi(/6/2[item4]!/4/2/1:0)"
               target="_blank"
@@ -86,7 +86,7 @@ const Carousel = () => {
             </a>
           </div>
           {/* The Hound of the Baskervilles */}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/123096/read#epubcfi(/6/2[titlepage]!/4/1:0)"
               target="_blank"
@@ -96,7 +96,7 @@ const Carousel = () => {
             </a>
           </div>
           {/* The Return of Sherlock Holmes */}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/123104/read#epubcfi(/6/2[titlepage]!/4/1:0)"
               target="_blank"
@@ -106,7 +106,7 @@ const Carousel = () => {
             </a>
           </div>
           {/* The Valley of Fear */}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/144731/read#epubcfi(/6/2[item4]!/4/2/1:0)"
               target="_blank"
@@ -116,7 +116,7 @@ const Carousel = () => {
             </a>
           </div>
           {/* His Last Bow */}
-          <div class="carousel-item">
+          <div className="carousel-item">
             <a
               href="https://manybooks.net/book/165558/read#epubcfi(/6/2[item4]!/4/2/1:0)"
               target="_blank"
@@ -128,22 +128,28 @@ const Carousel = () => {
         </div>
 
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#bookshelf-carousel"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#bookshelf-carousel"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </section>
