@@ -1,12 +1,37 @@
 import React from "react";
-import book1 from "../images/book1.jpg";
-import book2 from "../images/book2.jpg";
-import book3 from "../images/book3.jpg";
-import book4 from "../images/book4.jpg";
-import book5 from "../images/book5.jpg";
-import book6 from "../images/book6.jpg";
-import book7 from "../images/book7.jpg";
+import data from "../data.js";
+
+const CarouselItem = (props) => {
+  //const { href, title, src, alt } = props;
+  let activeClass;
+  if (props.title === "A Study In Scarlet") {
+    activeClass = "carousel-item active";
+  } else {
+    activeClass = "carousel-item";
+  }
+
+  return (
+    <div className={activeClass}>
+      <a href={props.href} title={props.title} target="_blank">
+        <img src={props.src} className="d-block" alt={props.alt} />
+      </a>
+    </div>
+  );
+};
+
 const Carousel = () => {
+  const CarouselItems = data.map((dataObject) => {
+    return (
+      <CarouselItem
+        key={dataObject.id}
+        href={dataObject.href}
+        title={dataObject.title}
+        src={`/images/${dataObject.image}`}
+        alt={dataObject.alt}
+      />
+    );
+  });
+
   return (
     <section className="bookshelf-section">
       <h1>Bookshelf</h1>
@@ -54,78 +79,7 @@ const Carousel = () => {
           ></button>
         </div>
 
-        <div className="carousel-inner">
-          {/* A Study In Scarlet */}
-          <div className="carousel-item active">
-            <a
-              href="https://manybooks.net/book/123113/read#epubcfi(/6/2[titlepage]!/4/1:0)"
-              target="_blank"
-              title="A Study In Scarlet"
-            >
-              <img src={book1} className="d-block" alt="Book1" />
-            </a>
-          </div>
-          {/* The Sign of the Four */}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/123109/read#epubcfi(/6/2[item4]!/4/2/1:0)"
-              target="_blank"
-              title="The Sign of the Four"
-            >
-              <img src={book2} className="d-block" alt="Book2" />
-            </a>
-          </div>
-          {/*The Adventures of Sherlock Holmes*/}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/123108/read#epubcfi(/6/2[item4]!/4/2/1:0)"
-              target="_blank"
-              title="The Adventures of Sherlock Holmes"
-            >
-              <img src={book3} className="d-block" alt="Book3" />
-            </a>
-          </div>
-          {/* The Hound of the Baskervilles */}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/123096/read#epubcfi(/6/2[titlepage]!/4/1:0)"
-              target="_blank"
-              title="The Hound of the Baskervilles"
-            >
-              <img src={book4} className="d-block" alt="Book4" />
-            </a>
-          </div>
-          {/* The Return of Sherlock Holmes */}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/123104/read#epubcfi(/6/2[titlepage]!/4/1:0)"
-              target="_blank"
-              title="The Return of Sherlock Holmes"
-            >
-              <img src={book5} className="d-block" alt="Book5" />
-            </a>
-          </div>
-          {/* The Valley of Fear */}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/144731/read#epubcfi(/6/2[item4]!/4/2/1:0)"
-              target="_blank"
-              title="The Valley of Fear"
-            >
-              <img src={book6} className="d-block" alt="Book6" />
-            </a>
-          </div>
-          {/* His Last Bow */}
-          <div className="carousel-item">
-            <a
-              href="https://manybooks.net/book/165558/read#epubcfi(/6/2[item4]!/4/2/1:0)"
-              target="_blank"
-              title="His Last Bow"
-            >
-              <img src={book7} className="d-block" alt="Book7" />
-            </a>
-          </div>
-        </div>
+        <div className="carousel-inner">{CarouselItems}</div>
 
         <button
           className="carousel-control-prev"

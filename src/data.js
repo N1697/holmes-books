@@ -1,0 +1,51 @@
+export default [
+  {
+    id: 1,
+    href: "https://manybooks.net/book/123113/read#epubcfi(/6/2[titlepage]!/4/1:0)",
+    title: "A Study In Scarlet",
+    image: "book1.jpg",
+    alt: "A Study In Scarlet",
+  },
+  {
+    id: 2,
+    href: "https://manybooks.net/book/123109/read#epubcfi(/6/2[item4]!/4/2/1:0)",
+    title: "The Sign of the Four",
+    image: "book2.jpg",
+    alt: "The Sign of the Four",
+  },
+  {
+    id: 3,
+    href: "https://manybooks.net/book/123108/read#epubcfi(/6/2[item4]!/4/2/1:0)",
+    title: "The Adventures of Sherlock Holmes",
+    image: "book3.jpg",
+    alt: "The Adventures of Sherlock Holmes",
+  },
+  {
+    id: 4,
+    href: "https://manybooks.net/book/123096/read#epubcfi(/6/2[titlepage]!/4/1:0)",
+    title: "The Hound of the Baskervilles",
+    image: "book4.jpg",
+    alt: "The Hound of the Baskervilles",
+  },
+  {
+    id: 5,
+    href: "https://manybooks.net/book/123104/read#epubcfi(/6/2[titlepage]!/4/1:0)",
+    title: "The Return of Sherlock Holmes",
+    image: "book5.jpg",
+    alt: "The Return of Sherlock Holmes",
+  },
+  {
+    id: 6,
+    href: "https://manybooks.net/book/144731/read#epubcfi(/6/2[item4]!/4/2/1:0)",
+    title: "The Valley of Fear",
+    image: "book6.jpg",
+    alt: "The Valley of Fear",
+  },
+  {
+    id: 7,
+    href: "https://manybooks.net/book/165558/read#epubcfi(/6/2[item4]!/4/2/1:0)",
+    title: "His Last Bow",
+    image: "book7.jpg",
+    alt: "His Last Bow",
+  },
+];
