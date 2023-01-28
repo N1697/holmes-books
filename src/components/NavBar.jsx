@@ -1,5 +1,5 @@
 import React from "react";
-import holmesLogo from "../images/holmes-logo.jpg";
+import holmesLogo from "../holmes-logo.jpg";
 
 const NavBar = () => {
   return (
